@@ -4,7 +4,7 @@ namespace App\Models;
 
 class Reply extends Model
 {
-    protected $fillable = ['content'];
+    protected $fillable = [ 'content'];
 
     public function topic()
     {
@@ -15,8 +15,5 @@ class Reply extends Model
     {
         return $this->belongsTo(User::class);
     }
-    public function scopeRecent($query)
-    {
-        return $query->orderBy('id', 'desc');
-    }
+
 }
