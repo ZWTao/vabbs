@@ -72,7 +72,7 @@ class User extends Authenticatable
 
         $this->attributes['password'] = $value;
     }
-    
+
     public function setAvatarAttribute($path)
     {
         // 如果不是 `http` 子串开头，那就是从后台上传的，需要补全 URL

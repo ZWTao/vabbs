@@ -3,7 +3,7 @@
 return array(
 
     // 后台的 URI 入口
-    'uri' => 'admin',
+    'uri' => 'Vabbs',
 
     // 后台专属域名，没有的话可以留空
     'domain' => '',
@@ -39,6 +39,8 @@ return array(
     'menu' => [
         '用户与权限' => [
             'users',
+            'roles',
+            'permissions',
         ],
     ],
 
